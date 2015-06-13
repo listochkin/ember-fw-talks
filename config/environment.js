@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-fw-talks',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://ember-fw-talks.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
