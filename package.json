@@ -34,6 +34,7 @@
     "ember-data": "1.0.0-beta.18",
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.2",
-    "emberfire": "1.4.5"
+    "emberfire": "1.4.5",
+    "liquid-fire": "0.19.4"
   }
 }

@@ -1,5 +1,10 @@
 event-list
 
+<h3>Current event</h3>
+
+{{liquid-outlet}}
+
+<hr>
 <ul>
   {{#each model as |event index|}}
     <li> {{#link-to 'event-list.event' event.id }} {{event.name}} {{/link-to}} </li>
@@ -8,4 +13,3 @@ event-list
   {{/each}}
 </ul>
 
-{{outlet}}

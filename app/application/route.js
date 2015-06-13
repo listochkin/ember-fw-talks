@@ -4,7 +4,7 @@ import ApplicationRouteMixin from 'simple-auth/mixins/application-route-mixin';
 export default Ember.Route.extend(ApplicationRouteMixin, {
   actions: {
     authenticateSession () {
-      this.get('session').authenticate('authenticator:firebase', 'twitter');
+      this.get('session').authenticate('authenticator:firebase', 'github');
     }
   }
 });
