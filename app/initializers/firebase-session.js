@@ -11,6 +11,11 @@ const FirebaseAuthenticator = Base.extend({
         error ? reject(error) : resolve(authData);
       });
     });
+  },
+  restore (data) {
+    return new Promise((resolve, reject) => {
+      data.provider && data[data.provider] ? resolve(data) : reject();
+    });
   }
 });
 
