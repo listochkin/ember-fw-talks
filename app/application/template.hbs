@@ -2,6 +2,7 @@
 
 <p>
   {{#if session.isAuthenticated}}
+    <img src={{session.secure.twitter.cachedUserProfile.profile_image_url_https}}>
     {{session.secure.twitter.username}} <button {{ action 'invalidateSession' }}>Logout</button>
   {{else}}
     <button {{ action 'authenticateSession' }}>Login</button>
