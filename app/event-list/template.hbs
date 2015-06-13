@@ -1,3 +1,11 @@
 event-list
 
+<ul>
+  {{#each model as |event index|}}
+    <li> {{#link-to 'event-list.event' event}} {{event.name}} {{/link-to}} </li>
+  {{else}}
+    <li>No events found</li>
+  {{/each}}
+</ul>
+
 {{outlet}}
