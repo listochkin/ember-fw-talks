@@ -1,0 +1,8 @@
+<form {{action 'newEvent' name logoUrl date on='submit'}} class="form-event-new">
+  <p><label for="name">Name</label>{{input type="text" name="name" value=name}}</p>
+  <p><label for="logoUrl">Path to logo</label>{{input type="text" name="logoUrl" value=logoUrl}}</p>
+  <p><label for="">Date</label>{{input type="date" name="date" value=date}}</p>
+  <p><label for=""></label><input type="submit"></p>
+</form>
+
+{{yield}}
